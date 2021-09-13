@@ -13,6 +13,6 @@ before_script:
   - composer self-update
   - composer --version
   - composer require symfony/framework-bundle:${SYMFONY_VERSION} --no-update
-  - composer install -n --dev --prefer-source
+  - composer install -n --prefer-source
 
 script: phpunit --configuration phpunit.xml.dist
